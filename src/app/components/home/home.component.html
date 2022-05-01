@@ -1,0 +1,130 @@
+<main>
+  <div id="section-father">
+    <div class="section-model1">
+      <div class="item-sec1-1">
+        <h1>Hi, I'm Victor.<br>Nice to meet you!</h1>
+        <p>I’m a developer and a UX Designer focused on <br>building & designing intuitive
+          experiences.</p>
+        <!--Call to Action Button-->
+        <div class="call-action">
+          <button class="main-button" routerLink="/contact">Get in touch</button>
+        </div>
+      </div>
+      <div class="item-sec1-2">
+        <img src="assets/placeholder.png" alt="hero-image">
+      </div>
+    </div>
+  </div>
+
+  <div id="section-father2">
+    <div class="section-model1">
+      <div class="item-sec1-1-1">
+        <p class="sub-iten">How I work</p>
+        <h2>Design Process</h2>
+        <p>I’m a developer and a UX Designer focused on building & designing intuitive experiences and always with
+          empathy. </p>
+      </div>
+    </div>
+  </div>
+  <section class="carousel">
+    <app-carousel></app-carousel>
+  </section>
+  <div class="container">
+    <div class="tab">
+      <ul>
+        <li id="strategy" [class.color-ative]="id ==='strategy'" (click)="tabChange('strategy')">
+          <fa-icon [icon]="faChessKnight"></fa-icon>
+          <p>Strategy</p>
+        </li>
+        <li id="design" [class.color-ative]="id ==='design'" (click)="tabChange('design')">
+          <fa-icon [icon]="faGem"></fa-icon>
+          <p>Design</p>
+        </li>
+        <li id="development" [class.color-ative]="id ==='development'" (click)="tabChange('development')">
+          <fa-icon [icon]="faLaptopCode"></fa-icon>
+          <p>Development</p>
+        </li>
+        <li id="quality-assurance" [class.color-ative]="id ==='quality-assurance'"
+          (click)="tabChange('quality-assurance')">
+          <fa-icon [icon]="faPeopleGroup"></fa-icon>
+          <p>Test</p>
+        </li>
+      </ul>
+
+      <div id="content">
+        <div class="content-value" *ngIf="id === 'strategy'">
+          <div class="item-sec1-1-3">
+            <img src="assets/placeholder.png" alt="hero-image">
+          </div>
+          <div class="item-sec1-2-3">
+            <h4>Strategy</h4>
+            <p>I’m a developer and a UX Designer focused on<br>building & designing intuitive experiences.</p>
+            <!--
+            <div class="call-action">
+              <button class="sec2-button2" routerLink="/contact">Get in touch</button>
+              <a class="icon-link" routerLink="/contact">
+                <p class="sec2-button">Get in touch</p>
+                <fa-icon [icon]="faArrowRight"></fa-icon>
+              </a>
+            </div>
+            -->
+          </div>
+        </div>
+        <div class="content-value" *ngIf="id === 'design'">
+          <div class="item-sec1-1-3">
+            <img src="assets/placeholder.png" alt="hero-image">
+          </div>
+          <div class="item-sec1-2-3">
+            <h4>Design</h4>
+            <p>I’m a developer and a UX Designer focused on<br>building & designing intuitive experiences.</p>
+            <!--
+            <div class="call-action">
+              <button class="sec2-button2" routerLink="/contact">Get in touch</button>
+              <a class="icon-link" routerLink="/contact">
+                <p class="sec2-button">Get in touch</p>
+                <fa-icon [icon]="faArrowRight"></fa-icon>
+              </a>
+            </div>
+            -->
+          </div>
+        </div>
+        <div class="content-value" *ngIf="id === 'development'">
+          <div class="item-sec1-1-3">
+            <img src="assets/placeholder.png" alt="hero-image">
+          </div>
+          <div class="item-sec1-2-3">
+            <h4>Development</h4>
+            <p>I’m a developer and a UX Designer focused on<br>building & designing intuitive experiences.</p>
+            <!--
+            <div class="call-action">
+              <button class="sec2-button2" routerLink="/contact">Get in touch</button>
+              <a class="icon-link" routerLink="/contact">
+                <p class="sec2-button">Get in touch</p>
+                <fa-icon [icon]="faArrowRight"></fa-icon>
+              </a>
+            </div>
+            -->
+          </div>
+        </div>
+        <div class="content-value" *ngIf="id === 'quality-assurance'">
+          <div class="item-sec1-1-3">
+            <img src="assets/placeholder.png" alt="hero-image">
+          </div>
+          <div class="item-sec1-2-3">
+            <h4>Test</h4>
+            <p>I’m a developer and a UX Designer focused on<br>building & designing intuitive experiences.</p>
+            <!--
+            <div class="call-action">
+              <button class="sec2-button2" routerLink="/contact">Get in touch</button>
+              <a class="icon-link" routerLink="/contact">
+                <p class="sec2-button">Get in touch</p>
+                <fa-icon [icon]="faArrowRight"></fa-icon>
+              </a>
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

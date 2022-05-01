@@ -1,0 +1,104 @@
+main {
+  display: flex;
+  justify-content: center;
+  background-color: var(--content-color);
+  transition: 1.5s;
+}
+
+span {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 50%;
+}
+
+section {
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 0;
+  width: 90%;
+  transition: 1.5s;
+  margin-top: 0px;
+  padding-bottom: 150px;
+}
+
+section div { /*!important*/
+  flex: 1 1 300px;
+}
+
+p {
+  margin-top: 16px;
+}
+
+.info {
+  margin-top: 50px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.contact div {
+  flex: 1 1 300px;
+}
+
+.contato1, .contato2, .contato3 {
+  display: grid;
+  justify-content: center;
+  transition: 1.5s;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  grid-gap: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.contato1 {
+  margin-right: 10px;
+}
+
+.contato2 {
+margin-left: 5px;
+margin-right: 5px;
+}
+
+.contato3 {
+  margin-left: 10px;
+}
+
+fa-icon {
+  font-size: 30px;
+  opacity: 50%;
+}
+
+@media screen and (max-width: 1100px) {
+
+  section {
+    width: 95%;
+    padding-bottom: 20px;
+  }
+
+  .contato1, .contato2, .contato3 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .info {
+    margin-top: 20px;
+  }
+
+}
+
+

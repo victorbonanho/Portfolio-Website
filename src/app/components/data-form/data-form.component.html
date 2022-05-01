@@ -1,0 +1,58 @@
+<form class="form-horizontal" [formGroup]="formulario" (ngSubmit)="onSubmit()" method="POST">
+  <div class="form-group" [ngClass]="aplicaCssErro('nome')">
+    <div class="col-sm-12">
+      <label for="nome" class="control-label">Name</label>
+    </div>
+    <div class="col-sm-12">
+      <input type="text" class="form-control" formControlName="nome" id="nome" placeholder="Your name"
+        [ngClass]="aplicaCssErro('nome')">
+      <app-campo-control-erro [mostrarErro]="verificaValidTouched('nome')" msgErro="Plese, insert your name.">
+      </app-campo-control-erro>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-12" [ngClass]="aplicaCssErro('email')">
+      <label for="email" class="control-label">E-mail</label>
+    </div>
+    <div class="col-sm-12">
+      <input type="email" class="form-control" formControlName="email" id="email" placeholder="name@email.com"
+        [ngClass]="aplicaCssErro('email')">
+      <app-campo-control-erro [mostrarErro]="verificaValidTouched('email')" msgErro="Plese, insert your e-mail.">
+      </app-campo-control-erro>
+      <app-campo-control-erro [mostrarErro]="verificarEmailInvalido()" msgErro="Invalid e-mail">
+      </app-campo-control-erro>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-12" [ngClass]="aplicaCssErro('subject')">
+      <label for="nome" class="control-label">Subject</label>
+    </div>
+    <div class="col-sm-12">
+      <input type="text" class="form-control" formControlName="subject" id="subject" placeholder="What's the topic?"
+        [ngClass]="aplicaCssErro('subject')">
+      <app-campo-control-erro [mostrarErro]="verificaValidTouched('subject')"
+        msgErro="Please, inform the subject of the message.">
+      </app-campo-control-erro>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-12" [ngClass]="aplicaCssErro('message')">
+      <label for="message" class="control-label">Message</label>
+    </div>
+    <div class="col-sm-12">
+      <textarea class="form-control" id="message" formControlName="message" rows="3"
+        [ngClass]="aplicaCssErro('message')"></textarea>
+    </div>
+    <app-campo-control-erro [mostrarErro]="verificaValidTouched('message')" msgErro="Please, text something...">
+    </app-campo-control-erro>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <!--reset button
+  <button class="btn" (click)="resetar()">Clear form</button>
+-->
+  <app-form-debug [form]="formulario"></app-form-debug>
+</form>

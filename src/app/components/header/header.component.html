@@ -1,0 +1,53 @@
+<header>
+  <a routerLink="/home" class="primary-present">
+    <img src="assets/vb-logoazul.png" alt="logo">
+    <div class="description">
+      <h1>Victor Bonanho</h1>
+      <p>Developer & UX Designer</p>
+    </div>
+  </a>
+  <div class="content">
+    <div class="current-work">
+      <fa-icon [icon]="faBriefcase"></fa-icon>
+      <p>Currently at Softvision & Freelance |<br>Previously at Funcamp, PrCom360</p>
+    </div>
+
+    <!--Navigation Menu here-->
+    <nav>
+      <div class="just-divider">
+        <a routerLink="/" routerLinkActive="active-menu" [routerLinkActiveOptions]="{exact:
+        true}" class="menu-icon">
+          <fa-icon [icon]="faHouseChimneyUser"></fa-icon>
+          <p>Home</p>
+        </a>
+      </div>
+      <div class="just-divider">
+        <a routerLink="/portfolio" routerLinkActive="active-menu" class="menu-icon">
+          <fa-icon [icon]="faBuffer"></fa-icon>
+          <p>Portfolio</p>
+        </a>
+      </div>
+      <div class="just-divider">
+        <a routerLink="/contact" routerLinkActive="active-menu" class="menu-icon">
+          <fa-icon [icon]="faComment"></fa-icon>
+          <p>Contact</p>
+        </a>
+      </div>
+      <div class="just-divider2">
+        <a routerLink="/" class="menu-icon">
+          <fa-icon [icon]="faFile"></fa-icon>
+          <p>Resume</p>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="contact-media">
+
+    <div class="social-icons">
+      <fa-icon [icon]="faGithubSquare"></fa-icon>
+      <fa-icon [icon]="faLinkedin"></fa-icon>
+      <fa-icon [icon]="faSquareEnvelope"></fa-icon>
+    </div>
+  </div>
+</header>

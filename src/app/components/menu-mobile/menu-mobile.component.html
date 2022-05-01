@@ -1,0 +1,31 @@
+<!--<header [class.header_change]="header_variable">-->
+<header>
+  <!--Navigation Menu here-->
+  <nav>
+    <div class="just-divider">
+      <a routerLink="/" routerLinkActive="active-menu" [routerLinkActiveOptions]="{exact:
+      true}" class="menu-icon">
+        <fa-icon [icon]="faHouseChimneyUser"></fa-icon>
+        <p>Home</p>
+      </a>
+    </div>
+    <div class="just-divider">
+      <a routerLink="/portfolio" routerLinkActive="active-menu" class="menu-icon">
+        <fa-icon [icon]="faBuffer"></fa-icon>
+        <p>Portfolio</p>
+      </a>
+    </div>
+    <div class="just-divider">
+      <a routerLink="/contact" routerLinkActive="active-menu" class="menu-icon">
+        <fa-icon [icon]="faComment"></fa-icon>
+        <p>Contact</p>
+      </a>
+    </div>
+    <div class="just-divider">
+      <a routerLink="/" class="menu-icon">
+        <fa-icon [icon]="faFile"></fa-icon>
+        <p>Resume</p>
+      </a>
+    </div>
+  </nav>
+</header>

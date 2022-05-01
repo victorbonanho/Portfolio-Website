@@ -1,0 +1,146 @@
+/*Desktop menu*/
+
+.content {
+  background-color: none;
+}
+
+.primary-present {
+  display: flex;
+  padding: 20px 35px 20px 35px;
+  align-items: center;
+}
+
+.primary-present img {
+  max-width:60px;
+  max-height:60px;
+  min-height:5px;
+  min-width:5px;
+}
+
+h1 {
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 14px;
+}
+
+.description {
+  margin-left: 25px;
+  margin-top: 0px;
+}
+
+.description p {
+  font-weight: 400;
+  color: #B1B1B1;
+}
+
+.current-work {
+  display: flex;
+  align-items: center;
+  padding: 10px 35px 10px 35px;
+  border-bottom: 1px solid #EAEAEA;
+  border-top: 1px solid #EAEAEA;
+  background-color: rgb(195, 255, 200);
+}
+
+.current-work p {
+  font-size: 14px;
+  margin-left: 16px;
+  color: #535353;
+}
+
+.current-work fa-icon {
+  color: #535353
+}
+
+.menu-icon {
+  display: flex;
+  padding: 16px 35px 16px 35px;
+  transition: 0s;
+}
+
+.just-divider {
+  border-top: 1px solid var(--border-color);
+  transition: 1.5s;
+}
+
+.just-divider2 {
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  transition: 1.5s;
+}
+
+.menu-icon p, .menu-icon fa-icon {
+  opacity: 90%;
+}
+
+.menu-icon:hover {
+  background-color: var(--box-color);
+  transition: 0s;
+}
+
+.active-menu {
+  background-color: #0095e01c!important;
+  border-right: solid 2px #0094E0;
+  transition: 0s;
+}
+
+.active-menu fa-icon, .active-menu p {
+  color: #0094E0;
+  opacity: 100%!important;
+  transition: 0s;
+}
+
+.menu-icon p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 3px;
+  margin-left: 35px;
+}
+
+.menu-icon fa-icon {
+  font-size: 22px;
+}
+
+.contact-media {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 35px 20px 35px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-media span {
+  font-weight: bold;
+}
+
+.social-icons {
+  margin-top: 0px;
+  background-color: var(--content-color);
+  border-radius: 100px;
+  border: 1px solid var(--border-color);
+  transition: 1.5s;
+}
+
+.social-icons fa-icon {
+  margin: 0 16px;
+  font-size: 32px;
+  opacity: 70%;
+  transition: 0s;
+}
+
+.social-icons fa-icon:hover {
+  color: #0094E0;
+  cursor: pointer;
+}
+
+/*Mobile menu*/
+
+
+
+
+

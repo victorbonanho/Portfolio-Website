@@ -1,0 +1,19 @@
+<!--<header [class.header_change]="header_variable">-->
+<header>
+  <div class="upbar-section">
+    <div class="nav">
+      <div class="back">
+        <fa-icon (click)="back()" [icon]="faCircleChevronLeft"></fa-icon>
+      </div>
+      <div class="right">
+        <fa-icon (click)="forward()" [icon]="faCircleChevronRight"></fa-icon>
+      </div>
+    </div>
+    <div class="action">
+      <button class="toggle" (click)="switchTheme()">
+        {{ theme === "light-theme" ? "Switch to dark" : "Switch to light" }}
+      </button>
+      <fa-icon (click)="switchTheme()" [icon]="faCircleHalfStroke"></fa-icon>
+    </div>
+  </div>
+</header>

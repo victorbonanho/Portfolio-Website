@@ -1,0 +1,45 @@
+#carouselExampleCaptions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 97%;
+}
+
+img {
+  width: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  opacity: 0;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  opacity: 0;
+}
+
+.carousel .carousel-indicators button {
+  background-color: #0094E0;
+  width: 200px;
+  height: 4px;
+ }
+
+h5 {
+  margin-top: 20px;
+}
+
+ p {
+   margin-bottom: 50px;
+ }
