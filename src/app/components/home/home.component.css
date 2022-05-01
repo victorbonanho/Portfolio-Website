@@ -24,6 +24,10 @@ app-carousel {
   display: none;
 }
 
+app-owl-carousel {
+  display: none;
+}
+
 .section-model1 {
   display: flex;
   flex-wrap: wrap;
@@ -258,6 +262,12 @@ fa-icon {
 
 @media screen and (max-width: 1100px) {
   app-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  app-owl-carousel {
     display: flex;
     justify-content: center;
     align-items: center;

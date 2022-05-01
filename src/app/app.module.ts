@@ -20,6 +20,9 @@ import { FormDebugComponent } from './shared/form-debug/form-debug.component';
 import { CampoControlErroComponent } from './shared/campo-control-erro/campo-control-erro.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { OwlCarouselComponent } from './components/owl-carousel/owl-carousel.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -37,6 +40,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     FormDebugComponent,
     CampoControlErroComponent,
     CarouselComponent,
+    OwlCarouselComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +49,9 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     ReactiveFormsModule,
     FormsModule,
     DataFormModule,
-    HttpClientModule
+    HttpClientModule,
+    CarouselModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

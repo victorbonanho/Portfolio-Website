@@ -1,0 +1,22 @@
+main {
+  width: 95%;
+  margin-bottom: 30px;
+}
+
+h5 {
+  margin-top: 20px;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+::ng-deep .owl-theme .owl-dots .owl-dot span {
+  background: #0095e038!important; /* dots color*/
+}
+
+::ng-deep .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #0094E0!important; /*active and on hover color*/
+}
