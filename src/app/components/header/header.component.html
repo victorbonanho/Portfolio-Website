@@ -1,11 +1,11 @@
 <header>
-  <a routerLink="/home" class="primary-present">
-    <img src="assets/vb-logoazul.png" alt="logo">
+  <div class="primary-present">
+    <img src="assets/victor_online.png" alt="victor-bonanho">
     <div class="description">
       <h1>Victor Bonanho</h1>
       <p>Developer & UX Designer</p>
     </div>
-  </a>
+  </div>
   <div class="content">
     <div class="current-work">
       <fa-icon [icon]="faBriefcase"></fa-icon>
@@ -45,9 +45,15 @@
   <div class="contact-media">
 
     <div class="social-icons">
-      <fa-icon [icon]="faGithubSquare"></fa-icon>
-      <fa-icon [icon]="faLinkedin"></fa-icon>
-      <fa-icon [icon]="faSquareEnvelope"></fa-icon>
+      <a href="https://github.com/victorbonanho" target="_blank">
+        <fa-icon [icon]="faGithubSquare"></fa-icon>
+      </a>
+      <a href="https://www.linkedin.com/in/victor-bonanho-b8b2ba141/" target="_blank">
+        <fa-icon [icon]="faLinkedin"></fa-icon>
+      </a>
+      <a href="mailto:contato@victorbonanho.com">
+        <fa-icon [icon]="faSquareEnvelope"></fa-icon>
+      </a>
     </div>
   </div>
 </header>

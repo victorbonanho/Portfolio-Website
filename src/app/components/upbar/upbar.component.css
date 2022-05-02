@@ -36,6 +36,14 @@ fa-icon:hover {
   width: 50%;
 }
 
+.logo {
+  width: 50%;
+}
+
+.logo img {
+  width: 40px;
+}
+
 /*
 .header_change {
   background-color: var(--background-color);

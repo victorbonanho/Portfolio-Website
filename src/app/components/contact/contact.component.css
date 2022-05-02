@@ -42,39 +42,52 @@ p {
   flex-wrap: wrap;
 }
 
-.contact div {
+.contact a {
   flex: 1 1 300px;
 }
 
 .contato1, .contato2, .contato3 {
-  display: grid;
-  justify-content: center;
   transition: 1.5s;
   background-color: var(--background-color);
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 20px;
+  margin: 0;
   border: 1px solid var(--border-color);
-  grid-gap: 16px;
-  cursor: pointer;
   margin-bottom: 10px;
 }
 
 .contato1 {
   margin-right: 10px;
+  background: linear-gradient(141deg, rgba(195,79,172,1) 0%, rgba(110,108,215,1) 48%, rgba(62,125,240,1) 100%);
+}
+
+.contato1 p, .contato1 fa-icon, .contato1 h4 {
+  color: white;
 }
 
 .contato2 {
 margin-left: 5px;
 margin-right: 5px;
+background: linear-gradient(141deg, rgba(37,158,225,1) 0%, rgba(25,142,206,1) 48%, rgba(3,112,173,1) 100%);
+}
+
+.contato2 p, .contato2 fa-icon, .contato2 h4 {
+  color: white;
 }
 
 .contato3 {
   margin-left: 10px;
+  background: linear-gradient(141deg, rgba(240,141,58,1) 0%, rgba(231,111,83,1) 48%, rgba(234,84,111,1) 100%);
+}
+
+.contato3 p, .contato3 fa-icon, .contato3 h4 {
+  color: white;
 }
 
 fa-icon {
   font-size: 30px;
-  opacity: 50%;
+  opacity: 100%;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 1100px) {
