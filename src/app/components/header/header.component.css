@@ -117,6 +117,7 @@ p {
 }
 
 .social-icons {
+  display: flex;
   margin-top: 0px;
   background-color: var(--box-color);
   border-radius: 100px;
@@ -127,13 +128,32 @@ p {
 .social-icons fa-icon {
   margin: 0 16px;
   font-size: 32px;
-  opacity: 70%;
+  opacity: 100%;
   transition: 0s;
 }
 
-.social-icons fa-icon:hover {
-  color: #0094E0;
-  cursor: pointer;
+.github fa-icon {
+  color: #8366CD;
+}
+
+.github fa-icon:hover {
+  opacity: 40%;
+}
+
+.linkedin fa-icon {
+  color: #1081C0;
+}
+
+.linkedin fa-icon:hover {
+  opacity: 40%;
+}
+
+.mail fa-icon {
+  color: #E8695A;
+}
+
+.mail fa-icon:hover {
+  opacity: 40%;
 }
 
 /*Mobile menu*/
