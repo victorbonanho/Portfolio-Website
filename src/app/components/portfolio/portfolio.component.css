@@ -42,7 +42,7 @@ section {
   width: 48px;
 }
 
-.adobexd img {
+.photoshop img {
   width: 50px;
 }
 
@@ -191,6 +191,10 @@ span {
     font-size: 40px;
   }
 
+  p {
+    text-align: left;
+  }
+
   img {
     margin-top: 20px;
   }
@@ -225,6 +229,19 @@ span {
 
   .item-sec1-1-1 {
     text-align: left;
+  }
+
+  .tools img {
+    margin-top: 20px;
+    width: 40px;
+    align-self: center;
+  }
+
+  .ionic img {
+    width: 60px;
+  }
+  .wordpress img {
+    width: 70px;
   }
 }
 
