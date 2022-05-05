@@ -7,7 +7,8 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 130px 0;
+  padding-bottom: 30px;
+  padding: 120px 0;
   border-bottom: 1px solid var(--border-color);
   transition: 1.5s;
 }
@@ -51,6 +52,23 @@ app-owl-carousel {
 
 .item-sec1-1 {
   width: 50%;
+  padding-right: 30px;
+}
+
+h1, h4 {
+  animation: Slide_Left 1.0s ease;
+}
+
+.item-sec1-1 p {
+  animation: Slide_Left 1.3s ease;
+}
+
+.item-sec1-2-3 p {
+  animation: Slide_Left 1.3s ease;
+}
+
+button {
+  animation: Slide_Left 1.5s ease;
 }
 
 .item-sec1-1-1 {
@@ -67,6 +85,7 @@ app-owl-carousel {
 
 img {
   width: 100%;
+  animation: fadeIn 3s;
 }
 
 h1 {
@@ -235,14 +254,14 @@ li p:hover, li fa-icon:hover {
 }
 
 .color-ative fa-icon, .color-ative p {
-  color: var(--text-color);
+  color: white!important;
   opacity: 100%!important;
 }
 
 .color-ative {
+  background-color: #0094E0;
+  border-radius: 10px;
   display: inline-block;
-  border-bottom: 4px solid #0094E0 ;
-  transition: 1.5s;
 }
 
 fa-icon {
@@ -274,13 +293,7 @@ fa-icon {
   }
 
   #section-father {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 30px;
-    padding-top: 0;
-    border-bottom: 1px solid var(--border-color);
-    transition: 1.5s;
+    padding: 20px 0;
   }
 
   #content {
@@ -328,12 +341,44 @@ fa-icon {
     text-align: left;
   }
 
+  .item-sec1-1 {
+    padding-right: 0;
+  }
+
   .call-action {
     margin-top: 20px;
   }
 
   .main-button {
     width: 1100px;
+  }
+}
+
+@keyframes Slide_Left {
+  0% {
+    transform: translateY(250px) ;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes Slide_Right {
+  0% {
+    transform: translateY(250px) ;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 
