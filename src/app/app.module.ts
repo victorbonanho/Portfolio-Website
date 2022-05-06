@@ -23,7 +23,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { OwlCarouselComponent } from './components/owl-carousel/owl-carousel.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoaderComponent } from './components/loader/loader.component';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatProgressBarModule } from '@angular/material/progress-bar'
 
 @NgModule({
   declarations: [
@@ -42,7 +43,6 @@ import { LoaderComponent } from './components/loader/loader.component';
     CampoControlErroComponent,
     CarouselComponent,
     OwlCarouselComponent,
-    LoaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +53,9 @@ import { LoaderComponent } from './components/loader/loader.component';
     DataFormModule,
     HttpClientModule,
     CarouselModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
