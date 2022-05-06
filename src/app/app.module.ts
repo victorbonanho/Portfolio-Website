@@ -23,8 +23,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { OwlCarouselComponent } from './components/owl-carousel/owl-carousel.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoaderComponent } from './components/loader/loader.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { MatProgressBarModule } from '@angular/material/progress-bar'
 
 @NgModule({
   declarations: [
@@ -43,7 +43,6 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     CampoControlErroComponent,
     CarouselComponent,
     OwlCarouselComponent,
-    LoaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,7 +53,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     DataFormModule,
     HttpClientModule,
     CarouselModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatProgressBarModule
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
