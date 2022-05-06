@@ -18,13 +18,15 @@ import { DataFormModule } from './components/data-form/data-form.module';
 import { DataFormComponent } from './components/data-form/data-form.component';
 import { FormDebugComponent } from './shared/form-debug/form-debug.component';
 import { CampoControlErroComponent } from './shared/campo-control-erro/campo-control-erro.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { OwlCarouselComponent } from './components/owl-carousel/owl-carousel.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { MatProgressBarModule } from '@angular/material/progress-bar'
+import { InterceptorService } from './loader/interceptor.service';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 
 @NgModule({
   declarations: [
@@ -54,9 +56,11 @@ import { MatProgressBarModule } from '@angular/material/progress-bar'
     HttpClientModule,
     CarouselModule,
     BrowserAnimationsModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatProgressSpinnerModule
   ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy },
+  { provide:HTTP_INTERCEPTORS,useClass:InterceptorService,multi:true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

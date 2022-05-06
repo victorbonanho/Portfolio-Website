@@ -4,6 +4,7 @@ import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons';
 import { DOCUMENT } from '@angular/common';
 import { windowToggle } from 'rxjs';
+import { LoaderService } from 'src/app/loader/loader.service';
 
 @Component({
   selector: 'app-upbar',
@@ -20,7 +21,8 @@ export class UpbarComponent implements OnInit {
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
-    private renderer: Renderer2) {}
+    private renderer: Renderer2,
+    public loaderService: LoaderService) {}
 
 
 //Dark light mode logic
