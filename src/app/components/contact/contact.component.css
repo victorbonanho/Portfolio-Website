@@ -1,8 +1,10 @@
 main {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   background-color: var(--content-color);
   transition: 1.5s;
+  height: 100vh;
 }
 
 span {
@@ -19,8 +21,7 @@ section {
   padding: 0 0;
   width: 90%;
   transition: 1.5s;
-  margin-top: 0px;
-  padding-bottom: 150px;
+  margin-top: 0;
 }
 
 section div { /*!important*/
@@ -37,13 +38,16 @@ p {
 
 .contact {
   display: flex;
-  justify-content: center;
-  margin-top: 30px;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .contact a {
   flex: 1 1 300px;
+}
+
+.contact p {
+  margin-bottom: 10px;
 }
 
 .contato1, .contato2, .contato3 {
@@ -57,7 +61,7 @@ p {
 }
 
 .contato1 {
-  margin-right: 10px;
+  margin-right: 5px;
   background: linear-gradient(141deg, rgba(195,79,172,1) 0%, rgba(110,108,215,1) 48%, rgba(62,125,240,1) 100%);
 }
 
@@ -66,8 +70,8 @@ p {
 }
 
 .contato2 {
-margin-left: 5px;
-margin-right: 5px;
+margin-left: 2.5px;
+margin-right: 2.5px;
 background: linear-gradient(141deg, rgba(37,158,225,1) 0%, rgba(25,142,206,1) 48%, rgba(3,112,173,1) 100%);
 }
 
@@ -76,7 +80,7 @@ background: linear-gradient(141deg, rgba(37,158,225,1) 0%, rgba(25,142,206,1) 48
 }
 
 .contato3 {
-  margin-left: 10px;
+  margin-left: 5px;
   background: linear-gradient(141deg, rgba(240,141,58,1) 0%, rgba(231,111,83,1) 48%, rgba(234,84,111,1) 100%);
 }
 
