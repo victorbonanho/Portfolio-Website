@@ -214,8 +214,9 @@ p {
 
 .item-sec1-2-3 {
   display: grid;
-  justify-content: flex-end;
+  justify-content: flex-start;
   width: 50%;
+  margin-left: 50px;
 }
 
 .tab {
@@ -333,7 +334,7 @@ fa-icon {
   }
 
   .item-sec1-2-3 {
-    display: grid;
+    display: flex;
     justify-content: flex-start;
     width: 50%;
   }
