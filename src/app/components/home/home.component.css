@@ -234,13 +234,14 @@ p {
 .tab ul li {
   line-height: 22px;
   text-align: center;
-  padding: 20px;
+  padding: 10px; 
   transition: 0s;
 }
 
 .tab ul li fa-icon, .tab ul li p {
   color: var(--text-color);
   font-weight: 500;
+  text-align: center;
   opacity: 40%;
 }
 
@@ -257,14 +258,23 @@ li p:hover, li fa-icon:hover {
 }
 
 .color-ative fa-icon, .color-ative p {
-  color: white!important;
+  color: var(--text-color)!important;
   opacity: 100%!important;
 }
 
 .color-ative {
-  background-color: #0094E0;
+  padding: 10px;
+  border-bottom: 4px solid #0094E0!important;
+  animation: border_anim 0.3s linear forwards!important;
+}
+
+li div {
+  padding: 10px;
+}
+
+li div:hover {
+  background-color: rgb(234, 234, 234);
   border-radius: 10px;
-  display: inline-block;
 }
 
 fa-icon {
@@ -383,6 +393,15 @@ fa-icon {
   to {
     opacity: 1;
   }
+}
+
+@keyframes border_anim {
+	0%{
+		border-bottom-width: 1em;
+	}
+	100%{
+		border-bottom-width: 1000em;
+	}
 }
 
 

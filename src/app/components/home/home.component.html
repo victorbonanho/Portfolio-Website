@@ -33,21 +33,29 @@
     <div class="tab">
       <ul>
         <li id="strategy" [class.color-ative]="id ==='strategy'" (click)="tabChange('strategy')">
-          <fa-icon [icon]="faChessKnight"></fa-icon>
-          <p>Strategy</p>
+          <div>
+            <fa-icon [icon]="faChessKnight"></fa-icon>
+            <p>Strategy</p>
+          </div>
         </li>
         <li id="design" [class.color-ative]="id ==='design'" (click)="tabChange('design')">
-          <fa-icon [icon]="faGem"></fa-icon>
-          <p>Design</p>
+          <div>
+            <fa-icon [icon]="faGem"></fa-icon>
+            <p>Design</p>
+          </div>
         </li>
         <li id="development" [class.color-ative]="id ==='development'" (click)="tabChange('development')">
-          <fa-icon [icon]="faLaptopCode"></fa-icon>
-          <p>Development</p>
+          <div>
+            <fa-icon [icon]="faLaptopCode"></fa-icon>
+            <p>Development</p>
+          </div>
         </li>
         <li id="quality-assurance" [class.color-ative]="id ==='quality-assurance'"
           (click)="tabChange('quality-assurance')">
-          <fa-icon [icon]="faPeopleGroup"></fa-icon>
-          <p>Test</p>
+          <div>
+            <fa-icon [icon]="faPeopleGroup"></fa-icon>
+            <p>Test</p>
+          </div>
         </li>
       </ul>
 
