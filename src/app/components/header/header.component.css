@@ -52,6 +52,7 @@ p {
 
 .current-work fa-icon {
   color: var(--text-color);
+  transition: 1.5s;
 }
 
 .menu-icon {
@@ -77,7 +78,7 @@ p {
 
 .menu-icon:hover {
   background-color: var(--box-color);
-  transition: 0s;
+  transition: 0s!important;
 }
 
 .active-menu {
@@ -89,7 +90,7 @@ p {
 .active-menu fa-icon, .active-menu p {
   color: #0094E0;
   opacity: 100%!important;
-  transition: 0s;
+  transition: 0s!important;
 }
 
 .menu-icon p {
