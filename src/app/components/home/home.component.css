@@ -17,8 +17,7 @@ main {
   display: flex;
   justify-content: center;
   margin-top: 90px;
-  padding-bottom: 60px;
-  padding: 0 200px;
+  padding-bottom: 20px;
 }
 
 app-carousel {
@@ -235,7 +234,7 @@ p {
 .tab ul li {
   line-height: 22px;
   text-align: center;
-  padding: 10px; 
+  padding: 10px;
   transition: 0s;
 }
 
@@ -366,43 +365,6 @@ fa-icon {
   .main-button {
     width: 1100px;
   }
-}
-
-@keyframes Slide_Left {
-  0% {
-    transform: translateY(250px) ;
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes Slide_Right {
-  0% {
-    transform: translateY(250px) ;
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes border_anim {
-	0%{
-		border-bottom-width: 1em;
-	}
-	100%{
-		border-bottom-width: 1000em;
-	}
 }
 
 

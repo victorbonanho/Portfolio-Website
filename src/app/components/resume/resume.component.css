@@ -1,7 +1,65 @@
+main {
+  background-color: var(--content-color);
+}
+
 section {
-  height: 100vh;
+  transition: 1.5s;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.section-model1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.aiframe {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 iframe {
-  height: 100%;
+  width: 95%;
+  height: 100vh;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 44px;
+}
+
+h4 {
+  font-size: 36px;
+}
+
+p {
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 20px;
+}
+
+.main-button {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  justify-content: center;
+  background-color: #0094E0;
+  transition: 0.3s;
+}
+
+.main-button:hover {
+  background-color: #0087cb;
 }

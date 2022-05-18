@@ -9,7 +9,7 @@ header {
   padding: 5px 0;
   transition: 1.5s;
   border-bottom: 1px solid var(--border-color);
-  z-index: 2;
+  z-index: 20;
 }
 
 /*Progressbar

@@ -48,9 +48,61 @@ h1, h2, h3, h4, h5 {
 }
 
 
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: grey rgb(218, 218, 218);
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+*::-webkit-scrollbar-track {
+  background: rgb(218, 218, 218);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 20px;
+}
+
+@keyframes Slide_Left {
+  0% {
+    transform: translateY(250px) ;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes Slide_Right {
+  0% {
+    transform: translateY(250px) ;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes border_anim {
+	0%{
+		border-bottom-width: 1em;
+	}
+	100%{
+		border-bottom-width: 1000em;
+	}
+}
+
+
