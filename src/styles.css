@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5 {
 .light-theme {
   --background-color: white;
   --text-color: #535353;
-  --box-color: rgb(243, 243, 243);
+  --box-color: rgb(240, 240, 240);
   --button-color: #fff;
   --border-color: #dedede;
   --content-color: #F6F8FA;
