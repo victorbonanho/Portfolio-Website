@@ -265,7 +265,6 @@ li p:hover, li fa-icon:hover {
 .color-ative {
   padding: 10px;
   border-bottom: 4px solid #0094E0!important;
-  animation: border_anim 0.3s linear forwards!important;
 }
 
 li div {
