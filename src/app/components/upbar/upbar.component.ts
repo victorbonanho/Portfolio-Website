@@ -16,7 +16,7 @@ export class UpbarComponent implements OnInit {
   faCircleChevronRight = faCircleChevronRight;
   faCircleHalfStroke = faCircleHalfStroke;
 
-  theme: Theme = 'light-theme';
+  theme: Theme = 'dark-theme';
 
 
   constructor(
@@ -49,17 +49,6 @@ export class UpbarComponent implements OnInit {
     console.log("went forward");
   }
 
-  //nice try :(
-  back_nulo=true;
-  backnulo() {
-    if(window.history.state === null) {
-      this.back_nulo=true;
-      console.log("Aqui NÃO volta");
-    } else {
-      this.back_nulo=false;
-      console.log("Aqui volta");
-    }
-  }
 /*On Scroll Efect
   header_variable=false;
   @HostListener("document:scroll")

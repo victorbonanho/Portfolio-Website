@@ -251,6 +251,7 @@ p {
 
 .tab ul li:hover {
   cursor: pointer;
+  transition: 0s!important;
 }
 
 li p:hover, li fa-icon:hover {
