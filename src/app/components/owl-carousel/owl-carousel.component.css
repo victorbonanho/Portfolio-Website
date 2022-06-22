@@ -12,6 +12,11 @@ p {
   font-size: 18px;
 }
 
+.giphy-embed {
+  background-color: var(--text-color);
+  border-radius: 10px;
+}
+
 ::ng-deep .owl-theme .owl-dots .owl-dot span {
   background: #0095e038!important; /* dots color*/
 }

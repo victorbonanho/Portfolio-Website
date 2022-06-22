@@ -16,7 +16,8 @@ export class UpbarComponent implements OnInit {
   faCircleChevronRight = faCircleChevronRight;
   faCircleHalfStroke = faCircleHalfStroke;
 
-  theme: Theme = 'dark-theme';
+  //Switch the default theme here
+  theme: Theme = 'light-theme';
 
 
   constructor(
