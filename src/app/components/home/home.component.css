@@ -351,11 +351,11 @@ iframe {
   }
 
   .section-model1 {
-    width: 95%;
+    width: 90%;
   }
 
   .tab {
-    width: 95%;
+    width: 90%;
   }
 
   .container {
@@ -367,15 +367,20 @@ iframe {
   }
 
   .item-sec1-1 {
-    padding-right: 0;
+    padding-right: 50px;
   }
 
   .call-action {
     margin-top: 20px;
   }
+}
 
+@media screen and (max-width: 640px) {
   .main-button {
-    width: 1100px;
+    width: 100%;
+  }
+  .item-sec1-1 {
+    padding-right: 0px;
   }
 }
 
