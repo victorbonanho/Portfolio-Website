@@ -20,7 +20,11 @@ export class HomeComponent implements OnInit {
   faPeopleGroup = faPeopleGroup;
 
 
-  constructor() { }
+  constructor() {
+    setTimeout(() => {
+
+    }, 300);
+   }
 
   ngOnInit(): void {}
 

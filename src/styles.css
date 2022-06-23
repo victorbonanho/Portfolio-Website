@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5 {
 
 .light-theme {
   --background-color: white;
-  --text-color: #535353;
+  --text-color: #1e1e1e;
   --box-color: rgb(240, 240, 240);
   --button-color: #fff;
   --border-color: #dedede;

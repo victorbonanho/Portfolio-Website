@@ -25,8 +25,10 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { MatProgressBarModule } from '@angular/material/progress-bar'
-import { InterceptorService } from './loader/interceptor.service';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
+import {MatToolbarModule} from '@angular/material/toolbar'
+import {MatButtonModule} from '@angular/material/button'
+
 
 @NgModule({
   declarations: [
@@ -57,10 +59,11 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
     CarouselModule,
     BrowserAnimationsModule,
     MatProgressBarModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatToolbarModule,
+    MatButtonModule
   ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy },
-  { provide:HTTP_INTERCEPTORS,useClass:InterceptorService,multi:true }],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
