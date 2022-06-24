@@ -43,9 +43,10 @@ export class UpbarComponent implements OnInit {
   ngOnInit(): void {
     this.initializeTheme();
   }
-
+  status: boolean = false;
   switchTheme() {
     this.document.body.classList.replace(this.theme, this.theme === 'light-theme' ? (this.theme = 'dark-theme') : (this.theme = 'light-theme'));
+    this.status = !this.status;
   }
 
   initializeTheme = (): void =>
