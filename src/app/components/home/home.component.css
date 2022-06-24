@@ -134,12 +134,12 @@ p {
   border-radius: 6px;
   padding: 10px 15px;
   justify-content: center;
-  background-color: #0094E0;
+  background-color: #007FFF;
   transition: 0.3s;
 }
 
 .main-button:hover {
-  background-color: #0087cb;
+  background-color: #0077ed;
 }
 
 
@@ -170,12 +170,12 @@ p {
   border: none;
   border-radius: 6px;
   padding: 10px 15px;
-  background-color: #0094E0;
+  background-color: #007FFF;
   transition: 0.3s;
 }
 
 .sec2-button2:hover {
-  background-color: #0087cb;
+  background-color: #007FFF;
 }
 
 .container {
@@ -265,7 +265,7 @@ li p:hover, li fa-icon:hover {
 
 .color-ative {
   padding: 10px;
-  border-bottom: 4px solid #0094E0!important;
+  border-bottom: 4px solid #007FFF!important;
 }
 
 li div {

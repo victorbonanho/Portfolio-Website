@@ -2,7 +2,7 @@
 <header>
   <div class="upbar-section">
     <a routerLink="/" class="logo">
-      <img src="assets/vb-logoazul.png" alt="">
+      <img src="assets/vb-logoazul-nova.png" alt="">
     </a>
     <!--back and return
     <div class="nav">
@@ -15,10 +15,17 @@
     </div>
     -->
     <div class="action">
-      <button class="toggle" (click)="switchTheme()">
+      <!-- <button class="toggle" (click)="switchTheme()">
         {{ theme === "light-theme" ? "Switch to dark" : "Switch to light" }}
-      </button>
-      <fa-icon (click)="switchTheme()" [icon]="faCircleHalfStroke"></fa-icon>
+      </button> -->
+      <div class="container-icon">
+        <div class="sun">
+          <fa-icon #sunAnimate class="sun-logo" (click)="switchTheme()" [icon]="faSun"></fa-icon>
+        </div>
+        <div class="moon">
+          <fa-icon #moonAnimate class="moon-logo" (click)="switchTheme()" [icon]="faMoon"></fa-icon>
+        </div>
+      </div>
     </div>
   </div>
 </header>

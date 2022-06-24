@@ -83,12 +83,12 @@ p {
 
 .active-menu {
   background-color: #0095e01c!important;
-  border-right: solid 2px #0094E0;
+  border-right: solid 2px #007FFF;
   transition: 0s;
 }
 
 .active-menu fa-icon, .active-menu p {
-  color: #0094E0;
+  color: #007FFF;
   opacity: 100%!important;
   transition: 0s!important;
 }

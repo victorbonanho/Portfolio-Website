@@ -1,7 +1,9 @@
-import { Component, OnInit, HostListener, Inject, Renderer2 } from '@angular/core';
+import { Component, OnInit, HostListener, Inject, Renderer2, ViewChild } from '@angular/core';
 import { faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons';
+import { faSun } from '@fortawesome/free-solid-svg-icons';
+import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import { DOCUMENT } from '@angular/common';
 import { windowToggle } from 'rxjs';
 
@@ -14,9 +16,22 @@ export class UpbarComponent implements OnInit {
   faCircleChevronLeft = faCircleChevronLeft;
   faCircleChevronRight = faCircleChevronRight;
   faCircleHalfStroke = faCircleHalfStroke;
+  faSun = faSun;
+  faMoon = faMoon;
+
 
   //Switch the default theme here
   theme: Theme = 'light-theme';
+
+  @ViewChild('sunAnimate') sunAnimate!: UpbarComponent;
+  @ViewChild('moonAnimate') moonAnimate!: UpbarComponent;
+
+
+//   iconAnimate = document.querySelector(".container").addEventListener("click", () => {
+//     document.querySelector(".sun-logo").classList.toggle("animate-sun");
+//     document.querySelector(".moon-logo").classList.toggle("animate-moon");
+//     document.querySelector("body").classList.toggle("dark");
+// })
 
 
   constructor(

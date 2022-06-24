@@ -35,7 +35,7 @@ header {
 
 fa-icon {
   font-size: 30px;
-  color: #0094E0;
+  color: #007FFF;
 }
 
 fa-icon:hover {
@@ -81,6 +81,43 @@ fa-icon:hover {
    align-items: center;
    width: 50%;
  }
+
+.container-icon {
+  position: relative;
+}
+
+.sun, .moon{
+  width: fit-content;
+  height: fit-content;
+}
+.moon{
+  position: absolute;
+  inset: 0;
+}
+.moon-logo{
+  opacity: 0;
+  transform: translateY(20%) rotateZ(50deg);
+  transition: all 1s ease-out;
+}
+.sun-logo{
+  opacity: 1;
+  transform: translateY(0) rotateZ(0deg);
+  transition: all 1s ease-out;
+}
+.animate-sun{
+  opacity: 0;
+  transform: translateY(20%) rotateZ(100deg);
+}
+.animate-moon{
+  opacity: 1;
+  transform: translateY(0%) rotateZ(0deg);
+}
+.animate-moon path{
+fill: white;
+}
+.animate-sun path{
+fill: white;
+}
 
  @media screen and (max-width: 1100px) {
   .upbar-section {
