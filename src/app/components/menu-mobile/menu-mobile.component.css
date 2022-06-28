@@ -44,13 +44,13 @@ header {
   .active-menu {
     background-color: #0095e01c!important;
     border-top: solid 2px #0094E0;
-    transition: 0s;
+    transition: 0s !important;
   }
 
   .active-menu fa-icon, .active-menu p {
     color: #0094E0;
-    opacity: 100%!important;
-    transition: 0s;
+    opacity: 100% !important;
+    transition: 0s !important;
   }
 
   .menu-icon p {
