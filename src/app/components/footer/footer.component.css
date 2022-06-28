@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--background-color);
+  background-color: var(--box-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +51,7 @@ p {
   color: var(--text-color);
   font-weight: 400;
   font-size: 12px;
-  margin-top: 18px;
+  margin-top: 10px;
   text-align: left;
 }
 

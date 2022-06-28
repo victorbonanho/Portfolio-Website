@@ -74,10 +74,6 @@ button {
   text-align: center;
 }
 
-.item-sec1-2 {
-  width: 50%;
-}
-
 .item-sec1-2 img {
   float: right;
 }
@@ -304,7 +300,61 @@ iframe {
   pointer-events: none;
 }
 
+.item-sec1-2 {
+  width: 50%;
+}
+
+.floating-image {
+  position: absolute;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 8%);
+  margin: 0;
+}
+
+.floating-images__container {
+  margin-top: -140px;
+  position: relative;
+}
+
+.floating-image img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+}
+
+.floating-image {
+  will-change: transform;
+  animation: animate 6s alternate infinite ease-in-out;
+}
+
+.floating-image:nth-child(1) {
+  right: 50px;
+  width: 50%;
+  z-index: 5;
+  top: 50px;
+  animation-delay: -2.6s;
+}
+.floating-image:nth-child(2) {
+  width: 30%;
+  right: 30px;
+  filter: blur(1px);
+  animation-delay: -5s;
+}
+.floating-image:nth-child(3) {
+  width: 40%;
+  left: 50px;
+  filter: blur(2px);
+  animation-delay: 0;
+}
+
+
+/*Tablets*/
 @media screen and (max-width: 1100px) {
+  .floating-images__container {
+    margin-top: -120px;
+  }
+
   app-carousel {
     display: flex;
     justify-content: center;
@@ -318,7 +368,8 @@ iframe {
   }
 
   #section-father {
-    padding: 20px 0;
+    padding-top: 50px;
+    padding-bottom: 80px;
   }
 
   #content {
@@ -371,16 +422,22 @@ iframe {
   }
 
   .call-action {
-    margin-top: 20px;
+    margin-top: 26px;
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 676px) {
   .main-button {
     width: 100%;
   }
   .item-sec1-1 {
     padding-right: 0px;
+  }
+  .floating-images__container {
+    margin-top: 10px;
+  }
+  #section-father {
+    padding-bottom: 220px;
   }
 }
 
