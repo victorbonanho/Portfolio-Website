@@ -33,12 +33,12 @@ header {
   margin-right: 18px;
 }
 
-fa-icon {
+mat-icon {
   font-size: 30px;
   color: #007FFF;
 }
 
-fa-icon:hover {
+mat-icon:hover {
   cursor: pointer;
 }
 
@@ -68,10 +68,11 @@ fa-icon:hover {
   cursor: pointer;
   padding: 0px;
   background-color: rgba(255, 255, 255, 0);
-  color: var(--text-color);
+  color: #B1B1B1;
   transition: all .1s ease;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 300;
+  opacity: 70%;
   margin-right: 16px;
  }
 
@@ -84,6 +85,7 @@ fa-icon:hover {
 
 .container-icon {
   position: relative;
+  margin-bottom: -7px;
 }
 
 .sun, .moon{

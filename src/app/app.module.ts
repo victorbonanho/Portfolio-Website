@@ -29,6 +29,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 import {MatToolbarModule} from '@angular/material/toolbar'
 import {MatButtonModule} from '@angular/material/button'
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatIconModule} from '@angular/material/icon'
 
 
 @NgModule({
@@ -63,7 +64,8 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     MatProgressSpinnerModule,
     MatToolbarModule,
     MatButtonModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatIconModule
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]

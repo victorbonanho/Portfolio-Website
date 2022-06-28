@@ -5,7 +5,6 @@ import { faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons';
 import { faSun } from '@fortawesome/free-solid-svg-icons';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import { DOCUMENT } from '@angular/common';
-import { windowToggle } from 'rxjs';
 
 @Component({
   selector: 'app-upbar',

@@ -20,12 +20,13 @@
       </button>
       <div class="container-icon">
         <div class="sun">
-          <fa-icon #sunAnimate class="sun-logo" (click)="switchTheme()" [icon]="faSun"
-            [ngClass]="status ? 'sun-logo' : 'animate-sun'"></fa-icon>
+          <mat-icon class="sun-logo" (click)="switchTheme()" [ngClass]="status ? 'sun-logo' : 'animate-sun'">wb_sunny
+          </mat-icon>
         </div>
         <div class="moon">
-          <fa-icon #moonAnimate class="moon-logo" (click)="switchTheme()" [icon]="faMoon"
-            [ngClass]="status ? 'moon-logo' : 'animate-moon'"></fa-icon>
+          <mat-icon class="moon-logo" (click)="switchTheme()" [ngClass]="status ? 'moon-logo' : 'animate-moon'">
+            dark_mode
+          </mat-icon>
         </div>
       </div>
     </div>

@@ -14,6 +14,7 @@ export class OwlCarouselComponent implements OnInit {
   }
 
   customOptions: OwlOptions = {
+    margin: 20,
     loop: true,
     mouseDrag: true,
     touchDrag: true,
