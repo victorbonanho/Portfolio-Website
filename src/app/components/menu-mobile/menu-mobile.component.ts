@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { faHouseChimneyUser } from '@fortawesome/free-solid-svg-icons';
 import { faBuffer } from '@fortawesome/free-brands-svg-icons';
 import { faComment } from '@fortawesome/free-solid-svg-icons';
@@ -15,8 +15,7 @@ export class MenuMobileComponent implements OnInit {
   faComment = faComment;
   faFile = faFile;
 
-
-  constructor() { }
+  constructor () {}
 
   ngOnInit(): void {
   }

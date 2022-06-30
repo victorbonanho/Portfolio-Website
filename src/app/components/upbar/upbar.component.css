@@ -68,11 +68,11 @@ mat-icon:hover {
   cursor: pointer;
   padding: 0px;
   background-color: rgba(255, 255, 255, 0);
-  color: #B1B1B1;
+  color: var(--text-color);
   transition: all .1s ease;
   font-size: 14px;
   font-weight: 300;
-  opacity: 70%;
+  opacity: 50%;
   margin-right: 16px;
  }
 
@@ -98,23 +98,23 @@ mat-icon:hover {
 }
 .moon-logo{
   display: inline-block;
-  opacity: 1;
+  opacity: 0;
   transition: all 1s ease-out;
-  transform: translateY(0) rotateZ(0deg);
+  transform: translateY(20%) rotateZ(50deg);
 }
 .sun-logo{
   display: inline-block;
-  opacity: 0;
-  transition: all 1s ease-out;
-  transform: translateY(20%) rotateZ(100deg);
-}
-.animate-sun{
   opacity: 1;
+  transition: all 1s ease-out;
   transform: translateY(0) rotateZ(0deg);
 }
-.animate-moon{
+.animate-sun{
   opacity: 0;
-  transform: translateY(20%) rotateZ(50deg);
+  transform: translateY(20%) rotateZ(100deg);
+}
+.animate-moon{
+  opacity: 1;
+  transform: translateY(0) rotateZ(0deg);
 }
 .animate-moon path{
 fill: white;
@@ -126,5 +126,14 @@ fill: white;
  @media screen and (max-width: 1100px) {
   .upbar-section {
     width: 95%;
+  }
+ }
+
+ @media screen and (max-width: 676px) {
+  .toggle {
+    margin-right: 10px;
+  }
+  .action {
+    margin-right: 8px;
   }
  }

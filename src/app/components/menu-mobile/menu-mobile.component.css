@@ -33,6 +33,7 @@ header {
     justify-content: center;
     margin-top: -1px;
     padding: 10px 0;
+    transition: 0s!important;
   }
 
   .menu-icon p, .menu-icon fa-icon {

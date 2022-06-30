@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 
 
@@ -12,8 +12,6 @@ export class AppComponent implements OnInit {
 
   title = 'Victor Bonanho';
   loader= true;
-
-  constructor() {}
 
   ngOnInit(): void {
       setTimeout(() => {

@@ -20,7 +20,7 @@ export class UpbarComponent implements OnInit {
 
 
   //Switch the default theme here
-  theme: Theme = 'light-theme';
+  theme: Theme = 'dark-theme';
 
   @ViewChild('sunAnimate') sunAnimate!: UpbarComponent;
   @ViewChild('moonAnimate') moonAnimate!: UpbarComponent;
