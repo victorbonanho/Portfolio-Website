@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: #001E3C;
 }
 
 p, h1, h2, h3, h4, h5, a, fa-icon, li, ul, hr {
@@ -40,6 +40,7 @@ h1, h2, h3, h4, h5 {
   --border-color: #ebebeb;
   --content-color: white;
   --scrollbar-color: rgb(146, 146, 146);
+  --linear-gradient: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
   transition: 1.5s;
 }
 
@@ -50,6 +51,7 @@ h1, h2, h3, h4, h5 {
   --border-color: #0E2741;
   --content-color: #001E3C;
   --scrollbar-color: rgb(141, 141, 141);
+  --linear-gradient: linear-gradient(to right, rgba(0,30,60,1) 0%, rgba(0,30,60,0) 100%);
   transition: 1.5s;
 }
 
@@ -117,6 +119,15 @@ h1, h2, h3, h4, h5 {
   }
   to {
     transform: translateY(30px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-150px * 9));
   }
 }
 

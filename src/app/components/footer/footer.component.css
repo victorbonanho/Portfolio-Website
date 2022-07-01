@@ -1,3 +1,8 @@
+main {
+  background-color: var(--content-color);
+  transition: 1s;
+}
+
 footer {
   background-color: var(--box-color);
   display: flex;
